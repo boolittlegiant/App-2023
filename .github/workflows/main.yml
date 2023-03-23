@@ -137,5 +137,5 @@ jobs:
           file: ./Environment/App/app/Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: boolittlegiant/tic4302-demo:latest
+          tags: boolittlegiant/tic4302-demo:latest 
           
