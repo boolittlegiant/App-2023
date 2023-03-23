@@ -86,8 +86,8 @@ jobs:
      - name: Build Image for testing
        run: docker-compose -f ./Environment/App/docker-compose.yml up --build -d
        
-    - name: OWASP ZAP Baseline Scan
-      uses: zaproxy/action-baseline@v0.7.0
+    - name: ZAP Scan
+       uses: zaproxy/action-baseline@v0.6.1
        with:
          target: 'http://localhost:5000'
          cmd_options: '-a'     
